@@ -18,5 +18,5 @@ RUN a2enmod rewrite
 RUN a2enconf php7.2-fpm
 RUN mkdir /var/lock/apache2
 ADD includes /
-EXPOSE 80
+EXPOSE 80 88
 CMD . /run.sh
